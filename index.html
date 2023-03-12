@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="sec">
+      <header>
+        <a link="#"> <img src="logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> Contact</a></li>
+          <li><a href="#"> Profile</a></li>
+          <li><a href="#"> Menu </a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+          <h2>
+            Thats why <br />
+            <span> I like it </span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            iusto dignissimos ipsam necessitatibus ab distinctio rerum error.
+            Esse nulla temporibus mollitia, totam tempora debitis obcaecati nisi
+            animi tenetur? Impedit, blanditiis!
+          </p>
+          <a href="#"> View all Products </a>
+        </div>
+
+        <div class="imgBox">
+          <img src="pepsi001.png" class="pepsi"/>
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgcolor('blue') "  /></li>
+        <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgcolor('red') " /></li>
+        <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgcolor('black') "/></li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+
+      function changeBgcolor(color){
+      const sec = document.querySelector(".sec");
+      sec.style.background = color;
+
+      }
+    </script>
+  </body>
+</html>
